@@ -1,0 +1,11 @@
+.content-about .container {
+    background-color: #f1f1f1d0;
+    border-radius: 14px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.container .list-unstyled {
+    padding: 20px;
+    margin-top: 10px;
+}
