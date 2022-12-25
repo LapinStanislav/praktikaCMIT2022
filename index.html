@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ЦМИТ</title>
+    <link rel="shortcut icon" href="./img/Logo2.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styless.css">
+    <script src="https://kit.fontawesome.com/9f10cc8564.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./img/Logo.png" alt="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 top-menu">
+                    <li class="nav-item">
+                        <a class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p1">Товары</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#f1">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i
+                                class="fa-regular fa-user"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./authorization.html">Авторизация</a></li>
+                            <li><a class="dropdown-item" href="./registration.html">Регистрация</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark text-white">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Корзина</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td><img src="./img/korzina.jpg" alt="#"></td>
+                                                    <td><a href="#">Корзинка ручной работы</a></td>
+                                                    <td>1800₽</td>
+                                                    <td>1шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><img src="./img/minyon.jpg" alt="#"></td>
+                                                    <td><a href="#">Миньон ручной работы</a></td>
+                                                    <td>1200₽</td>
+                                                    <td>1шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td><img src="./img/beer.jpg" alt="#"></td>
+                                                    <td><a href="#">Новогодний медведь</a></td>
+                                                    <td>2000₽</td>
+                                                    <td>1шт</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-primary">Сохранить покупки</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid my-carousel">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block"
+                        style="background-color: rgba(77, 77, 77, 0.5); border-radius: 20px;">
+                        <h5>В центре проводятся курсы</h5>
+                        <p>для школьников и взрослых по техническим направлениям:
+                            3D-моделирование, робототехника и программирование, черчение и архитектурное проектирование,
+                            столярное мастерство.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Screenshot_1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block"
+                        style="background-color: rgb(77,77,77,0.5); border-radius: 20px;">
+                        <h5>Для творческих ребят</h5>
+                        <p>у нас есть курс «Дизайнеры приключений» и художественные мастер-классы в пространстве
+                            «АкадемиУм»</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="main-content" id="p1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="#"><img src="./img/master2.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="#">Робототехника</a></h4>
+                            <p>Работаем в виртуальной среде Autodesk tinkercad, затем проект переносим на реальную
+                                схему
+                            </p>
+
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>4500₽</small> 3999₽
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="#"><img src="./img/master1.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="#">Столярное мастерство 9+</a></h4>
+                            <p>На курсе ребята:
+                                - познакомятся с видами древесины и работы со стонками
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>3500₽</small> 3000₽
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="#"><img src="./img/master3.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="#">3Д- моделирование 9+</a></h4>
+                            <p>Мы предлагаем вам новую увлекательную программу 🧑‍💻
+                            </p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>3500₽</small> 2900₽
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light text-dark pt-2 pb-4" id="f1">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <section class="contact">
+                    <div class="container">
+                        <h5 class="text-info">ГДЕ НАС НАЙТИ</h5>
+                        <p>
+                            <li class="fas fa-home"></li> Сборная улица, дом 2, Выборг
+                        </p>
+                        <hr>
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9bb76f21ff92fe4142cd8af9f6e2dcd722f6ccc6496417bf4489b9a8852d9ffa&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </section>
+                <hr>
+                <div class="row d-flex justify-content-center">
+                    <div>
+                        <p>
+                            Copyright © 2022 Все права защищены:
+                            <a href="#" style="text-decoration: none;">
+                                <strong class="text-info">ЦМИТ</strong>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="text-center">
+                        <ul class="list-inline-item">
+                            <a href="https://vk.com/cmitvbg" class="massage"><img src="./img/vk.png" alt="#"></a>
+                            <a href="https://t.me/cmitvbg" class="massage"><img src="./img/telegram.png" alt="#"></a>
+                            <a href="mailto:skisk1@bk.ru" class="massage"><img src="./img/email.png" alt="#"></a>
+                            <a href="https://www.gosuslugi.ru" class="massage"><img src="./img/gosuslugi.png"
+                                    alt="#"></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

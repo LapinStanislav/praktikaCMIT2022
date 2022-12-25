@@ -1,0 +1,190 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ЦМИТ</title>
+    <link rel="shortcut icon" href="./img/Logo2.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styless.css">
+    <link rel="stylesheet" href="./css/forma.css">
+    <script src="https://kit.fontawesome.com/9f10cc8564.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./img/Logo.png" alt="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 top-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Товары</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i
+                                class="fa-regular fa-user"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./authorization.html">Авторизация</a></li>
+                            <li><a class="dropdown-item" href="./registration.html">Регистрация</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark text-white">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Корзина</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td><img src="./img/korzina.jpg" alt="#"></td>
+                                                    <td><a href="#">Корзинка ручной работы</a></td>
+                                                    <td>1800₽</td>
+                                                    <td>1шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><img src="./img/minyon.jpg" alt="#"></td>
+                                                    <td><a href="#">Миньон ручной работы</a></td>
+                                                    <td>1200₽</td>
+                                                    <td>1шт</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td><img src="./img/beer.jpg" alt="#"></td>
+                                                    <td><a href="#">Новогодний медведь</a></td>
+                                                    <td>2000₽</td>
+                                                    <td>1шт</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-primary">Сохранить покупки</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="authorization-sector">
+        <div class="container">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-6 d-flex flex-column align-items-center" style="z-index: 2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h3 style="margin-bottom: 30px">Войдите в ваш аккаунт</h3>
+                        </li>
+                        <li>
+                            <p>
+                                Ещё не зарегистрированы на нашем сайте? Нажмите
+                                <a href="./registration.html" style="font-weight: 600;">СЮДА</a>,
+                                чтобы
+                                исправить это!
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row forma">
+                <form class="row row-cols-1 justify-content-end needs-validation" novalidate>
+                    <div class="w-75">
+                        <label for="validateLogin" class="form-label">Введите логин</label>
+                        <input type="login" class="form-control w-50" id="validateLogin" required />
+                        <div class="invalid-feedback">Введите логин</div>
+                    </div>
+                    <div class="w-75">
+                        <label for="validatePass" class="form-label">Введите пароль</label>
+                        <input type="password" class="form-control w-50" id="validatePass" required />
+                        <div class="invalid-feedback">Введите пароль</div>
+                    </div>
+                    <div class="w-75">
+                        <button class="btn btn-outline-dark" type="submit">
+                            Авторизоваться
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-dark pt-2 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <section class="contact">
+                    <div class="container">
+                        <h5 class="text-info">ГДЕ НАС НАЙТИ</h5>
+                        <p>
+                            <li class="fas fa-home"></li> Сборная улица, дом 2, Выборг
+                        </p>
+                        <hr>
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9bb76f21ff92fe4142cd8af9f6e2dcd722f6ccc6496417bf4489b9a8852d9ffa&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </section>
+                <hr>
+                <div class="row d-flex justify-content-center">
+                    <div>
+                        <p>
+                            Copyright © 2022 Все права защищены:
+                            <a href="#" style="text-decoration: none;">
+                                <strong class="text-info">ЦМИТ</strong>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="text-center">
+                        <ul class="list-inline-item">
+                            <a href="https://vk.com/cmitvbg" class="massage"><img src="./img/vk.png" alt="#"></a>
+                            <a href="https://t.me/cmitvbg" class="massage"><img src="./img/telegram.png" alt="#"></a>
+                            <a href="mailto:skisk1@bk.ru" class="massage"><img src="./img/email.png" alt="#"></a>
+                            <a href="https://www.gosuslugi.ru" class="massage"><img src="./img/gosuslugi.png"
+                                    alt="#"></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
